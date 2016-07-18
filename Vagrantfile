@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 Vagrant.configure(2) do |config|
-  4.times do |num|
+  5.times do |num|
     config.vm.define "habitat_node_#{num}" do |node|
       config.vm.synced_folder "~/src", "/home/vagrant/src"
 
