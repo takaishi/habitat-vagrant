@@ -6,6 +6,7 @@
 $ git clone https://github.com/takaishi/habitat-vagrant.git
 $ cd habitat-vagrant
 $ VBoxManage natnetwork add --netname habitat_network --network 192.168.33.0/24
+$ vagrant plugin install vagrant-vbguest
 $ vagrant up
 ```
 
