@@ -11,8 +11,8 @@ Vagrant.configure(2) do |config|
 
       node.vm.provider "virtualbox" do |vb|
         vb.name = "habitat_node_#{num}"
-        vb.cpus = 2
-        vb.memory = 1024
+        vb.cpus = 1
+        vb.memory = 256
         vb.customize ["modifyvm", :id, "--nic2","natnetwork"]
         vb.customize ["modifyvm", :id, "--nictype2","82540EM"]
         vb.customize ["modifyvm", :id, "--nicpromisc2","allow-all"]  
