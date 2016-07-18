@@ -1,5 +1,5 @@
 sudo apt-get update
-sudo apt-get install -y git vim
+sudo apt-get install -y git vim jq
 rm -rf hab*
 wget 'https://api.bintray.com/content/habitat/stable/linux/x86_64/hab-$latest-x86_64-linux.tar.gz?bt_package=hab-x86_64-linux' -O hab.tar.gz
 mkdir -p hab
